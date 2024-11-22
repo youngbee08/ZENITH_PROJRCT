@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Branch / ATM</title>
+    <!-- css cdn bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- css cdn bootstrap ends -->
+    <!-- google font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- google font roboto ends -->
+    <!-- link css external styling -->
+     <link rel="stylesheet" href="../css/findus.css"> 
+    <!-- link css external styling -->
+    <!-- link css external styling 2 -->
+     <link rel="stylesheet" href="../css/global.css">
+    <!-- link css external styling 2 ends -->
+    <!-- font awesome  cdn link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome  cdn link ends-->
+</head>
+<body>
+    <!-- header  -->
+    <header class="header">
+        <div class="header-items">
+             <div class="item-1">
+                 <a class="hov lap" href="../pages/help.html">Help Centre</a>
+                 <div class="line">
+                    <p class="lap">|</p>
+                    <a class="hov lap" href="./findus.html">Find Us</a>
+                 </div>
+                 <div class="line">
+                    <p class="lap">|</p>
+                    <a class="hov lap" href="../pages/openacc.html">Open Account</a>
+                 </div>
+                 <!--  -->
+                 <!-- <div class="line">
+                    <p id="phone">|</p>
+                    <a class="hov" id="phone" href="">Open Account</a>
+                 </div>
+                 <div class="line">
+                    <p id="phone">|</p>
+                    <a class="hov" id="phone" href="">Virtual Cards</a>
+                 </div>
+                 <div class="line">
+                    <p id="phone">|</p>
+                    <a class="hov" id="phone" href="">Apps</a>
+                 </div>
+                 <div class="line">
+                    <p id="phone">|</p>
+                    <a class="hov" id="phone" href="">Self-Service</a>
+                 </div> -->
+             </div>
+             <div class="item-2">
+                 <div class="a-con">
+                     <p class="hov lap">A</p>
+                     <p class="hov lap" style="font-size: 13px;"><u>A</u></p>
+                     <p class="hov lap">A</p>
+                 </div>
+                 <div class="ever">
+                 <div class="line-2">
+                    <p class="lap">|</p>
+                    <a class="hov lap" href="">Speech</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down hi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                    <p>|</p>
+                 </div>
+                 <span class="speech-drop">
+                    <h2>Choose Voice</h2>
+                    <button class="plain">Alex (Default)</button>
+                    <!-- <br> -->
+                    <button class="colored">START SPEAKING</button>
+                 </span>
+                 </div>
+                 <select class="select lap" name="Select Language" id="select">
+                    <option value="s">Select Language</option>
+                    <option value="s">Chinese (simplified)</option>
+                    <option value="s">French</option>
+                    <option value="s">German</option>
+                    <option value="s">Hausa</option>
+                    <option value="s">Igbo</option>
+                    <option value="s">Italian</option>
+                    <option value="s">Japanese</option>
+                    <option value="s">Korean</option>
+                    <option value="s">Spanish</option>
+                    <option value="s">Yoruba</option>
+                 </select>
+                 <!--  -->
+                 <div class="countries lap">
+                    <div class="flag lap">
+                      <p class="lap">|</p>
+                      <div class="flag-con lap">
+                         <img class="nig" src="../project-images/nigeria-flag.png" alt="img not found">
+                      </div>
+                     <p class="hov">NGN</p>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                    </div>
+                     <!--  -->
+                     <div class="hidden">
+                        <div class="hidden-items">
+                            <img class="nig-2" src="../project-images/nigeria-flag.png" alt="no img">
+                            <p>Nigeria</p>
+                        </div>
+                        <!--  -->
+                        <div class="hidden-items">
+                            <img src="../project-images/ghana flag.svg" alt="no img">
+                            <p>Ghana</p>
+                        </div>
+                        <!--  -->
+                        <div class="hidden-items">
+                            <img src="../project-images/sierra-leone flag.svg" alt="no img">
+                            <p>Sierra leone</p>
+                        </div>
+                        <!--  -->
+                        <div class="hidden-items">
+                            <img src="../project-images/gambia flag.svg" alt="no img">
+                            <p>Gambia</p>
+                        </div>
+                        <!--  -->
+                        <div class="hidden-items">
+                            <img src="../project-images/uk flag.svg" alt="no img">
+                            <p>United Kingdom</p>
+                        </div>
+                     </div>   
+                 </div>
+             </div>
+             <!-- item2 ends-->
+        </div>
+        <!-- header-items ends -->
+    </header>
+    <!-- header ends -->
+
+
+
+
+    <!-- header2 -->
+    <div class="header-2">
+        <!-- header-2 items -->
+        <div class="header2-items">
+            <!-- itemm-1 -->
+           <div class="itemm-1">
+              <button class="inter">   <i class="fa-solid fa-lock"></i> INTERNET BANKING</button>
+              <div class="anchors">
+                  <a href="">PERSONAL</a>
+                  <a href="">SME</a>
+                  <a href="../pages/corporate.html">CORPORATE</a>
+                  <a href="">MEDIA</a>
+                  <a href="">INVESTOR RELATIONS</a>
+                  <a href="">CSR</a>
+                  <a href="">ABOUT US</a>
+             </div>
+          </div>
+          <!-- itemm-1 ends -->
+
+          <!-- itemm-2 -->
+           <div class="itemm-2">
+             <div class="search">
+                <input type="text" placeholder="SEARCH">
+                <i class="fa-solid fa-magnifying-glass"></i>  
+             </div>
+             <div class="zenith-con">
+                <a href="../index.html">
+                  <img src="../project-images/zenith-bank-logo_2.png" alt="no img">
+                </a>
+             </div>
+           </div>
+          <!-- itemm-2 ends -->
+        </div>
+        <!-- header2-items ends -->
+    </div>
+    <!-- header-2 ends -->
+     <!--  -->
+    <!-- hidden header-1 on mobile -->
+    <div class="mobil">
+       <div class="line">
+         <p class="phone" style="color:#EEF0F2 ;">|</p>
+         <a class="phone kk" href="../pages/openacc.html">Open Account</a>
+       </div>
+       <div class="line">
+         <p class="phone">|</p>
+         <a class="phone" href="">Virtual Cards</a>
+       </div>
+       <div class="line">
+        <p class="phone">|</p>
+        <a class="phone" href="">Apps</a>
+       </div>
+       <div class="line">
+        <p class="phone">|</p>
+        <a class="phone" href="">Self-Service</a>
+       </div>
+    </div>
+    <!-- hidden header on mobile ends -->
+     <!--  -->
+    <!-- header-2-mobile -->
+    <div class="mobil-2">
+       <div class="first">
+         <div class="navbar">
+            <span class="menu-icon" onclick="toggleHeader()">☰</span>
+            <p style="color: #676767 !important; font-size: 11px; font-weight: 700;">MENU</p>
+            <div class="header-words" id="headerWords">
+               <a href="#home">PERSONAL</a>
+               <a href="#about">SME</a>
+               <a href="#services">CORPORATE</a>
+               <a href="#contact">MEDIA</a>
+               <a href="#contact">INVESTOR RELATIONS</a>
+               <a href="#contact">CSR</a>
+               <a href="#contact">ABOUT US</a>
+            </div>
+            </div>
+            <!--  -->
+            <div class="sag">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+              <p style="color: #676767 !important; font-size: 11px; font-weight: 700;">SEARCH</p>
+            </div>
+            <div class="sag">
+              <i class="fa-solid fa-lock"></i>
+              <p style="color: #676767 !important; font-size: 11px; font-weight: 700;">LOGIN</p>
+            </div>
+            <div class="sag">
+              <i class="fa-solid fa-share-from-square"></i>
+              <p style="color: #676767 !important; font-size: 11px; font-weight: 700;">LINKS</p>
+            </div>
+            <div class="sag">
+              <div class="coun">
+                 <img src="../project-images/nigeria-flag.png" alt="no img" style="height: 15px;">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                  </svg>
+              </div>
+              <p  style="color: #676767 !important; font-size: 11px; font-weight: 700;">COUNTRIES</p>
+            </div>
+       </div>
+       <div class="second">
+         <div class="zenit-con">
+            <img src="../project-images/zenith-bank-logo_2.png" alt="">
+         </div>
+       </div>
+    </div>
+    <!-- header-2-mobile ends -->
+    <!-- carousel -->
+    <div class="carou">
+        <h1>Find a Branch / ATM</h1>
+        <p class="m">With over three hundred and ninety branches spread across the country and <br> thousands of ATMs deployed at our branches and offsite, we can continue to offer <br> you premium service long after closing time.</p>
+        <button class="ll">
+            <a href="">Zenith Bank</a>
+            <p>></p>
+            <p>Customer Service</p>
+            <p>></p>
+            <p>Find a Branch / ATM - Customer Service</p>
+        </button>
+    </div>
+    <!-- carousel -->
+    <!-- closer -->
+    <div class="closer">
+        <h3>Closer Now Than Never</h3>
+        <p>At Zenith, we understand the importance of bringing our services and branches <br> closer to you. With over 390 branches at strategic locations within Nigerian cities, <br> we keep our promise to serve you better.</p>
+    </div>
+    <!-- closer ends -->
+    <!-- to -->
+    <div class="to">
+        <p>To search, please select the state and name of the branch. If you do not know the branch by name , select all and <br> click the search button.</p>
+        <div class="view">
+         <p>Search for our <span class="terii">393</span> Branch Locations</p>
+         <p>|</p>
+         <a href="">VIEW ALL BRANCH LOCATIONS</a>
+        </div>
+        <!-- drop-up -->
+     <select class="ssse" name="select branch" id="select">
+         <option class="drop" value="b">SELECT A STATE</option>
+         <option class="drop" value="b">ABIA</option>
+         <option class="drop" value="b">ADAMAWA</option>
+         <option class="drop" value="b">AKWA IBOM</option>
+         <option class="drop" value="b">ANAMBRA</option>
+         <option class="drop" value="b">BAUCHI</option>
+         <option class="drop" value="b">BAYELSA</option>
+         <option class="drop" value="b">BENUE</option>
+         <option class="drop" value="b">BORNO</option>
+         <option class="drop" value="b">CROSS RIVER</option>
+         <option class="drop" value="b">DELTA</option>
+         <option class="drop" value="b">EBONYI</option>
+         <option class="drop" value="b">EDO</option>
+         <option class="drop" value="b">EKITI</option>
+         <option class="drop" value="b">ENUGU</option>
+         <option class="drop" value="b">FCT,ABUJA</option>
+         <option class="drop" value="b">GOMBE</option>
+         <option class="drop" value="b">IMO</option>
+         <option class="drop" value="b">JIGAWA</option>
+     </select>
+     <!-- drop-up ends -->
+    </div>
+    <!-- to ends -->
+    <!-- premium -->
+    <div class="premium">
+        <h3>Premium Service Long After Closing Time</h3>
+        <p>Our ATMs bring your loved ones' cross-border remittances to a street corner in your <br> neighbourhood as you can process and claim Western Union transfers at our ATMs. <br> You can also update your personal information and even make cash deposits on <br> these versatile machines.</p>
+        <p class="with">With literally thousands of ATMs deployed at our branches and offsite, this is how <br> we continue to offer you premium service long after closing time, you'll never look <br> at our ATMs quite the same way again.</p>
+    </div>
+    <!-- premium ends -->
+    <!-- to -->
+    <div class="to">
+        <p>To search, please select the state and name of the branch. If you do not know the branch by name , select all and <br> click the search button.</p>
+        <div class="view">
+         <p>Search for our <span class="terii">1367</span> ATM Locations</p>
+         <p>|</p>
+         <a href="">VIEW ALL ATM LOCATIONS</a>
+        </div>
+        <!-- drop-up -->
+     <select class="ssse2" name="select branch" id="select">
+         <option class="drop2" value="b">SELECT A STATE</option>
+         <option class="drop2" value="b">ABIA</option>
+         <option class="drop2" value="b">ADAMAWA</option>
+         <option class="drop2" value="b">AKWA IBOM</option>
+         <option class="drop2" value="b">ANAMBRA</option>
+         <option class="drop2" value="b">BAUCHI</option>
+         <option class="drop2" value="b">BAYELSA</option>
+         <option class="drop2" value="b">BENUE</option>
+         <option class="drop2" value="b">BORNO</option>
+         <option class="drop2" value="b">CROSS RIVER</option>
+         <option class="drop2" value="b">DELTA</option>
+         <option class="drop2" value="b">EBONYI</option>
+         <option class="drop2" value="b">EDO</option>
+         <option class="drop2" value="b">EKITI</option>
+         <option class="drop2" value="b">ENUGU</option>
+         <option class="drop2" value="b">FCT,ABUJA</option>
+         <option class="drop2" value="b">GOMBE</option>
+         <option class="drop2" value="b">IMO</option>
+         <option class="drop2" value="b">JIGAWA</option>
+     </select>
+     <!-- drop-up ends -->
+    </div>
+    <!-- to ends -->
+    <!-- form -->
+    <form action="">
+        <p>Street</p>
+        <input type="text">
+        <button class="more">SEARCH</button>
+     </form>
+    <!-- form ends -->
+    <!-- related -->
+   <div class="related">
+    <div class="r1">
+       <h3>Related Links</h3>
+    </div>
+    <div class="r2">
+       <a href=""> <i class="fa-solid fa-chevron-right"></i> Contact Us</a>
+       <a href=""> <i class="fa-solid fa-chevron-right"></i>  Service Hours</a>
+       <a href=""> <i class="fa-solid fa-chevron-right"></i>  Make Suggestions</a>
+       <a href=""> <i class="fa-solid fa-chevron-right"></i>  Market Update</a>
+       <a href=""> <i class="fa-solid fa-chevron-right"></i>  Ways To Bank</a>
+       <a href=""> <i class="fa-solid fa-chevron-right"></i>  Downloads</a>
+    </div>
+   </div>
+   <!-- related ends -->
+   <!-- social media icons nd co -->
+   <div class="social">
+    <div class="whatsapp">
+       <i style="color: green;" class="fa-brands fa-whatsapp"></i>
+    </div>
+    <!--  -->
+    <div class="facebook">
+       <i style="color: blue;" class="fa-brands fa-facebook"></i> 
+    </div>
+    <!--  -->
+    <div class="twitter">
+       <i style="color: rgb(111, 113, 250);" class="fa-brands fa-twitter"></i>
+    </div>
+    <!--  -->
+    <div class="ig">
+       <i style="color: rgb(99, 27, 99);" class="fa-brands fa-instagram"></i>
+    </div>
+    <!--  -->
+    <div class="yb">
+       <i style="color: rgb(236, 21, 21);" class="fa-brands fa-youtube"></i>
+    </div>
+    <!--  -->
+    <div class="lkd">
+       <i style="color: rgb(32, 59, 178);" class="fa-brands fa-linkedin"></i>
+    </div>
+    <div class="cancel">
+       <i style="color: rgb(65, 64, 64);" class="fa-solid fa-x"></i>
+    </div>
+   </div>
+   <div class="co">
+      <div class="same">
+         <a href="../pages/openacc.html" class="pos">OPEN ACCOUNT</a>
+      </div>
+      <div class="same">
+         <a href="" class="pos">VIRTUAL CARDS</a>
+      </div>
+      <div class="same">
+         <a href="" class="pos">APPS</a>
+      </div>
+      <div class="same">
+         <a href="" class="pos">SELF-SERVICE</a>
+      </div>
+      <div class="same">
+         <a href="" class="pos">ATM/BRANCH LOCATOR</a>
+      </div>
+      <div class="same">
+         <a href="" class="pos">FORMS</a>
+      </div>
+      <div class="same">
+         <a href="" class="pos">FAQS</a>
+      </div>
+     </div>
+  <!-- social media icons nd co ends -->
+ <!-- footer -->
+ <footer class="footer">
+    <div class="foot-item1">
+       <div class="ite1">
+          <p>PRODUCT ADVERT</p>
+          <iframe width="290" height="140" src="https://www.youtube.com/embed/90RWOnZNj-o" title="Thinking Of Banking In Africa? Think Zenith" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </div>
+       <!--  -->
+       <div class="ite2">
+          <p>CUSTOMER SERVICES</p>
+          <a href="">Help Center</a>
+          <a href="">Whistle Blower</a>
+          <a href="">Dispense Error</a>
+          <a href="">Frequently Asked Questions</a>
+          <a href="">Contact Us</a>
+          <a href="">Locate a Branch / ATM</a>
+          <a href="">Downloads</a>
+          <a href="">Create Hardware Token Pin</a>
+       </div>
+       <!--  -->
+       <div class="ite3">
+          <p>PROTECT YOURSELF</p>
+          <a href="">Scam Alert</a>
+          <a href="">Replace Your Card</a>
+          <a href="">Internet Banking Security</a>
+          <a href="">Email Fraud and Phishing</a>
+          <a href="">Card Security</a>
+          <a href="">Online Security</a>
+          <a href="">Bank Verification Number (BVN)</a>
+          <a href="">Regulatory Authorities</a>
+       </div>
+       <!--  -->
+       <div class="ite4">
+          <p>QUICK LINKS</p>
+          <a href="">Realtime Access</a>
+          <a href="">Zenith e-channels Portal</a>
+          <a href="">Zenith Trade Portal</a>
+          <a href="">Visa Online</a>
+          <a href="">Reactivate Dormant Account</a>
+          <a href="">Letter of Credit Application Form</a>
+          <a href="">Request Cheque Book</a>
+          <a href="">Travel Notification Portal</a>
+       </div>
+       <!--  -->
+       <div class="ite5">
+          <p>NEWS</p>
+          <a href="">Zenith Bank Unveils Zenith Tech Fair 4.0, Features Global IT Practitioners</a>
+          <a href="">Zenith Bank Assures Customers of Exceptional Service Delivery Following Successful IT Infrastructure Upgrade</a>
+          <a href="">Zenith Bank Delivers Remarkable Triple-Digit Growth in Gross Earnings as PBT Hits N1.0 Trillion in Q3 2024</a>
+          <a href="">Zenith Bank Wins ‘Bank of The Year’ and ‘Retail Bank of the Year’ at BAFI Awards 2024</a>
+          <a href="">Zenith Economic Quarterly Vol.20 No.3 July 2024</a>
+       </div>
+    </div>
+    <div class="foot-item2">
+       <div class="icons">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+           </svg>
+           <!--  -->
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+           </svg>
+           <!--  -->
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+             <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+           </svg>
+           <!--  -->
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+             <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+           </svg>
+           <!--  -->
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+             <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+           </svg>
+           <!--  -->
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+           </svg>
+       </div>
+    </div>
+    <div class="foot-item3">
+       <div class="c">
+          <p>© 2024 Zenith Bank PLC (Licensed by the Central Bank of Nigeria) </p>
+          <div class="l">
+           <p>|</p>
+           <p>Privacy Policy</p>
+          </div>
+          <div class="l">
+           <p>|</p>
+           <p>Cookie Policy</p>
+          </div>
+          <div class="l">
+             <p>|</p>
+             <p>Terms Of Use</p>
+             <p>|</p>
+            </div>
+       </div>
+       <!--  -->
+       <div class="ctr">
+          <div class="l2">
+             <!-- <p>|</p> -->
+             <a href="">Gambia</a>
+            </div>
+          <!--  -->
+          <div class="l2">
+             <p>|</p>
+             <a href="">Ghana</a>
+            </div>
+          <!--  -->
+          <div class="l2">
+             <p>|</p>
+             <a href="">Sierra leone</a>
+            </div>
+          <!--  -->
+          <div class="l2">
+             <p>|</p>
+             <a href="">United Kingdom</a>
+            </div>
+          <!--  -->
+       </div>
+    </div>
+   </footer>
+  <!-- footer ends -->
+   <!-- up -->
+   <a href="#" class="up">
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+       <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+     </svg>
+     <p>SCROLL UP</p>
+ </a>
+</body>
+<!--java  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--java ends  -->
+</html>

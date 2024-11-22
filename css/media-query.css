@@ -1,0 +1,16 @@
+@import url(./css-variables.css);
+@import url(./global.css);
+/* @media screen and (max-width:900px) {
+    .header{
+        display: none;
+    }
+    .header-2{
+        display: none;
+    }
+    .mobil{
+        display: block;
+        display: flex;
+        color: black;
+        
+    }
+} */
