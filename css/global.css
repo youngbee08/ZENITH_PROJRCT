@@ -300,6 +300,46 @@ a:hover{
     /* width: 70%; */
     object-fit: cover;
 }
+.person{
+    z-index: 9;
+    position: absolute;
+    background-color: white;
+    padding: 2rem .4rem .5rem;
+    color: var(--col2-heda);
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0rem;
+    grid-template-rows: 1fr;
+    display: none;
+}
+.per:hover .person{
+    z-index: 9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0rem;
+}
+.person .p-it1{
+
+}
+.p-it1 h5{
+    font-size: 12px;
+    font-weight: var(--heda-wait);
+    line-height: 16.5px;
+    margin-bottom: 1.7rem;
+    margin-left: .4rem;
+}
+.p-it1 h5:hover{
+    color: var(--btn-bg-col1);
+}
+.p-it1 p{
+    margin-bottom: .7rem;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 17.6px;
+
+}
 .mobil{
     background-color: var(--bdy-bg-col);
     width: 100%;
